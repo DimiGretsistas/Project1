@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+  <head>
+    <meta charset="UFT-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Shark Attack for Now</title>
+  </head>
 
-    <head>
-        <meta charset = "UFT-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "styles.css">
-        <script srx = "game.js" defer></script>
-        
-        <title> Shark Attack for Now</title>
-    </head>
-    <body>
-        <div id = "game-intro">
-            <img src = "./images/logo.png"/>
-            <br />
-            <button id = "start-button"> Start Game </button>
-            <p> Avoid the different kinds of sea creatures coming against you and try to hit them with the harpoon to get points!</p>
+  <body>
+    <div id="game-intro">
+      <img src="./images/logo.png" />
+      <br />
+      <button id="start-button">Start Game</button>
+      <p>Avoid the sharks coming against you</p>
+    </div>
+
+    <div id="game-container">
+      <div id="game-screen">
+        <div class="results-wrapper">
+          <h2>Results</h2>
+          <p>Score: <span id="score"></span></p>
+          <p>Lives: <span id="lives"></span></p>
         </div>
+      </div>
 
-        <div id ="game-container">
-            <div id = "game-screen"></div>
-        </div>
-        
-        <div id = "game-end">
-            <img src />
-            <h1>Game-over!</h1>
-            <br />
-            <button id="restart-button">Restart</button>
-        </div>
-
-        <script type = "text/javascript" src = "js/game.js"></script>
-
-</body>
+      <div id="game-end">
+        <img id="game-over" src="./images/gameIsOver.jpeg" />
+        <h1>Game-over!</h1>
+        <br />
+        <button id="restart-button">Restart</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/obstacle.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>
