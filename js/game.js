@@ -15,7 +15,7 @@ class Game {
       150,
       "../images/diver.gif"
     );
-    this.player.speed = 10;
+    this.player.speed = 5;
     this.height = 700;
     this.width = 700;
     this.obstacles = [];
@@ -92,5 +92,3 @@ class Game {
     this.gameAudio.pause();
   }
 }
-
-//game.start();

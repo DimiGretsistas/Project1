@@ -7,7 +7,7 @@ class Player {
     this.height = height;
     this.directionX = 0;
     this.directionY = 0;
-    this.speed = 10;
+    this.speed = 5;
     this.element = document.createElement("img");
 
     this.element.src = imgSrc;

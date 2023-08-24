@@ -3,7 +3,7 @@ body {
     text-align: center;
 }
 #game-intro {
-    padding 20px 0px;
+    padding: 20px 0;
 }
 
 
@@ -59,10 +59,5 @@ body button {
 
 .results-wrapper p {
     align-items: center;
-
-}
-
-.results-wrapper h2 {
- 
 
 }
