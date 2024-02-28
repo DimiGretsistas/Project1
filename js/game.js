@@ -70,11 +70,11 @@ class Game {
     }
     if (this.lives === 0) {
       this.endGame();
-    } else if (this.score === 10) {
+    } else if (this.score === 30) {
       this.endGame();
     }
 
-    if (Math.random() > 0.98 && this.obstacles.length < 1) {
+    if (Math.random() > 0.98 && this.obstacles.length < 5) {
       this.obstacles.push(new Obstacle(this.gameScreen));
     }
   }
